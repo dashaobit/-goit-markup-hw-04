@@ -160,8 +160,8 @@ img{
 
 /* hero */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
   text-align: center;
   background-color: var(--section-background-color);
 }
@@ -175,7 +175,17 @@ img{
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
+.overlay{
+  max-width: 1200px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/fon-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: 1px solid red;
+}
 /* section общее*/
 .section-title {
   margin-bottom: 50px;
