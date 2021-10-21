@@ -339,6 +339,15 @@ img {
 .adress-item:last-child {
   margin-bottom: 0;
 }
+.icon-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+svg{  
+  width: 20px;
+  height: 20px;
+}
 /* portfolio */
 .examples-title {
   margin-bottom: 4px;
