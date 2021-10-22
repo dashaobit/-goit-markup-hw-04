@@ -112,9 +112,21 @@ img {
   display: flex;
   margin-left: 93px;
 }
-.icon-item-header{
+.icon-item-header {
   display: flex;
   align-items: center;
+}
+
+.icon-header {
+  fill: currentColor;
+}
+.icon-header:hover,
+.icon-header:focus {
+  fill: var(--acсent-background-color);
+}
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--acсent-text-color);
 }
 /* .icon-envelope::before{
   content: '';
@@ -158,10 +170,6 @@ img {
 .site-nav .link.current {
   color: var(--acсent-text-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--acсent-text-color);
-}
 .contact-nav .link {
   color: var(--primery-text-color);
   font-weight: 500;
@@ -169,22 +177,18 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contact-nav .link:hover,
-.contact-nav .link:focus {
-  color: var(--acсent-text-color);
-}
+
 .contact-nav {
   display: flex;
   margin-left: auto;
 }
-header svg{
+header svg {
   margin-right: 10px;
 }
-.icon-item-header .link{
+.icon-item-header .link {
   display: flex;
   align-items: center;
 }
-
 
 /* hero */
 .hero {
@@ -244,26 +248,26 @@ header svg{
 .feature-item:nth-child(4n) {
   margin-right: 0;
 }
-.feature-item::before{
+.feature-item::before {
   display: block;
-  content: "";
+  content: '';
   height: 120px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-size: 70px;
   background-position: center;
   background-color: var(--secondary-background-color);
- }
-.icon-antenna::before{
-   background-image: url(../images/antenna.svg);
 }
-.icon-clock::before{
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
   background-image: url(../images/clock.svg);
 }
-.icon-diagram::before{
+.icon-diagram::before {
   background-image: url(../images/diagram.svg);
 }
-.icon-astronaut::before{
+.icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
 }
 .feature-list .title {
@@ -288,7 +292,7 @@ header svg{
   margin-right: 0;
 }
 
-/* -------------------------team ------------------*/
+/* -----------------------------------------team ------------------*/
 .team-section {
   background-color: var(--secondary-background-color);
 }
@@ -311,39 +315,46 @@ header svg{
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+  background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.icon-team{
+.icon-team {
   width: 20px;
   height: 20px;
-  margin-top: 16px;
 }
-.icon-list-team{
+.icon-list-team {
   display: flex;
   margin: 0;
   padding: 0;
+  margin-top: 16px;
   margin-left: 32px;
   margin-right: 32px;
 }
-.icon-item-team{
+.icon-item-team {
   width: 44px;
   height: 44px;
   margin-right: 10px;
-  background-color:  var(--secondary-background-color);
+  background-color: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.icon-item-team:last-child{
+.icon-item-team:last-child {
   margin-right: 0;
 }
-.icon-item-team:hover{
-  background-color: var(--acсent-background-color);
+.icon-item-team:hover {
+  background-color: var(--primary-background-color);
 }
-
+.icon-team {
+  fill: #afb1b8;
+}
+.icon-team:hover,
+.icon-team:focus {
+  fill: #ffffff;
+}
 
 /* ----------------------------footer -----------------------*/
 .adress {
@@ -376,45 +387,49 @@ header svg{
 .adress-item:last-child {
   margin-bottom: 0;
 }
-.icon-list-footer{
+.icon-list-footer {
   display: flex;
   margin: 0;
   padding: 0;
   margin-top: 20px;
 }
-.icon-item-footer{
+.icon-item-footer {
   width: 44px;
   height: 44px;
   margin-right: 10px;
-  background-color:  rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.icon-item-footer:last-child{
+.icon-item-footer:last-child {
   margin-right: 0;
 }
-.icon-item-footer:hover{
+.icon-item-footer:hover {
   background-color: var(--acсent-background-color);
 }
-footer svg{  
+footer svg,
+.icon-link-footer {
   width: 20px;
   height: 20px;
 }
-.icon-container{
+.icon-footer {
+  fill: #ffffff;
+}
+
+.icon-container {
   margin-left: 70px;
   margin-top: 12px;
   font-weight: bold;
-line-height: 1.14;
-text-transform: uppercase;
-
-color: #FFFFFF;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
 }
-.container-footer{
+.container-footer {
   display: flex;
 }
-/* portfolio */
+/* ---------------------------portfolio--------------------- */
 .examples-title {
   margin-bottom: 4px;
   color: var(--title-text-color);
@@ -454,6 +469,11 @@ color: #FFFFFF;
 }
 .examples-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+.examples-item:hover,
+.examples-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .examples-box {
   border-right: 1px solid var(--border-color);
