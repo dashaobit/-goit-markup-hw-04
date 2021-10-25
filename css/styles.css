@@ -123,10 +123,7 @@ img {
 .icon-header {
   fill: currentColor;
 }
-.contact-nav .link:hover .icon-header,
-.contact-nav .link:focus .icon-header{
- fill: var(--acсent-background-color);
-}
+/* если цвет иконки  currentColor, как у родятеля (как у ссылки), то цвет при ховере тоже наследуется*/
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--acсent-text-color);
