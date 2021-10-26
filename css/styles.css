@@ -379,8 +379,7 @@ header svg {
 /* -----------------------Постоянные клиенты ----------------------*/
 .client-list {
   display: flex;
-  margin-top: 50px;
- }
+}
 .client-item {
   width: 170px;
   height: 92px;
@@ -453,6 +452,7 @@ header svg {
 }
 .container-footer {
   display: flex;
+  align-items: baseline;
 }
 .icon-list-footer {
   display: flex;
